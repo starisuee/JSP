@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForms.css">
+    <title>Registro de Estudiante</title>
+</head>
+<body>
+    <header class="hStyle">
+        <p style="margin-top:0">Logo</p>
+    </header>
+
+    <main class="mainStyle">
+      <div class="introCont">
+        <h2 class="registroTitles">Registro de Estudiante</h2>
+        <p>El siguiente formulario está dedicado a los estudiantes que desean ingresar
+           a el registro digital de la Universidad Del Pueblo. Rellene con sus datos
+           personales en los espacios respectivos e indique los cursos a los que desea
+           ingresar.</p>
+      </div>
+      <form action="">
+        <div class="fillCont">
+          <div class="formItem">
+            <label for="name" class="simpleLabel">Nombre Completo</label>
+                <input class="inputText" type="text" id="name" name="nombreEs" required>
+          </div>
+          <div class="formItem">
+            <label for="id" class="simpleLabel">Cédula</label>
+                <input class="inputText" type="text" id="id" name="cedulaEs" required>
+          </div>
+          <div class="formItem">
+            <label for="cYear" class="simpleLabel">Año Lectivo</label>
+                <input class="inputText" type="text" id="cYear" name="currentYearEs" required>
+          </div>
+          <div class="formItem">
+            <label for="region" class="simpleLabel">Centro Regional</label>
+                <select  class="inputText" id="region" name="regionEs" required>
+                    <option selected>--Seleccionar--</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Colón">Colón</option>
+                    <option value="Coclé">Coclé</option>
+                    <option value="Veraguas">Veraguas</option>
+                    <option value="Bocas del Toro">Bocas del Toro</option>
+                    <option value="Chiriquí">Chiriquí</option>
+                <option value="Los Santos">Los Santos</option>
+                </select>
+          </div>
+          <p>Seleccione el curso al que desea ingresar</p>
+          <div>
+              <div class="radioItem">
+                <div>
+				  <input type="checkbox" id="sold" name="courseEs" value="Soldadura">
+				  	<label for="sold">Soldadura</label>
+			    </div>
+                <div>
+				  <input type="checkbox" id="elec" name="courseEs" value="Electrónica">
+					<label for="elec">Electrónica</label>
+			    </div>
+              </div>
+              <div class="radioItem">
+                <div>
+				  <input type="checkbox" id="coci" name="courseEs" value="Cocina">
+					<label for="coci">Cocina</label>
+			    </div>
+                <div>
+				  <input type="checkbox" id="prog" name="courseEs" value="Programación">
+					<label for="prog">Programación</label>
+			    </div>
+            </div>
+          </div>
+
+          <div class="formItem">
+            <label for="in" class="simpleLabel">Indice</label>
+                <input class="inputText" type="text" id="in" name="indice" required>
+          </div>
+
+
+        </div>
+        <div class="buttonSection">
+            <button type="submit" class="sendButton sendButton1">Enviar</button>
+      </form>
+    </main>
+    <footer class="fStyle">
+
+    </footer>
+</body>
+</html>

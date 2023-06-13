@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForms.css">
+    <title>Registro de Profesor</title>
+</head>
+<body>
+    <header class="hStyle">
+        <p style="margin-top:0">Logo</p>
+    </header>
+
+    <main class="mainStyle">
+      <div class="introCont">
+        <h2 class="registroTitles">Registro de Profesor</h2>
+        <p>Hola profesor, a continuación usted deberá rellenar los campos con la información 
+           solicitada por la Universidad Del Pueblo Para implementar un nuevo registro 
+           digital de sus Profesores y Estudiantes.</p>
+      </div>
+      <form action="">
+        <div class="fillCont">
+          <div class="formItem">
+            <label for="name" class="simpleLabel">Nombre Completo</label>
+                <input class="inputText" type="text" id="name" name="nombrePr" required>
+          </div>
+          <div class="formItem">
+            <label for="id" class="simpleLabel">Cédula</label>
+                <input class="inputText" type="text" id="id" name="cedulaPr" required>
+          </div>
+          <div class="formItem">
+            <label for="subj" class="simpleLabel">Materia que dicta</label>
+                <input class="inputText" type="text" id="subj" name="materiaPr" required>
+          </div>
+          <div class="formItem">
+            <label for="region" class="simpleLabel">Centro Regional</label>
+                <select  class="inputText" id="region" name="regionPr" required>
+                    <option selected>--Seleccionar--</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Colón">Colón</option>
+                    <option value="Coclé">Coclé</option>
+                    <option value="Veraguas">Veraguas</option>
+                    <option value="Bocas del Toro">Bocas del Toro</option>
+                    <option value="Chiriquí">Chiriquí</option>
+                <option value="Los Santos">Los Santos</option>
+                </select>
+          </div>
+          <p>Tiene experiencia en clase virtual?</p>
+          <div class="radioItem">
+              <div>
+                <input type="radio" id="yes" name="virtualPr" value=1>
+                    <label for="yes" class="simpleLabel">Sí</label>
+              </div>
+              <div>
+                <input type="radio" id="no" name="virtualPr" value=0>
+                    <label for="no" class="simpleLabel">No</label>
+              </div>
+          </div>
+        </div>
+        <div class="buttonSection">
+            <button type="submit" class="sendButton">Enviar</button>
+      </form>
+    
+    </main>
+    <footer class="fStyle">
+
+    </footer>
+</body>
+</html>

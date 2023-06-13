@@ -1,0 +1,97 @@
+body {              /*      BG, QUITA MARGENES BRUJOS Y FUENTE DIFERENTE A FORMULARIO */
+    background-color: #e3e1da;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+form {                          /*  CAMBIA LA FUENTE A SER DIFERENTE A LA DE BODY*/
+    font-family:Geneva, Verdana, sans-serif;
+}
+
+.hStyle {                   /*  header para que se mantenga pegado arriba  y siempre tiene el mismo tamaño al hacer zoom*/
+    background-color: #928880;
+    width: 100%;
+    height: 10vh;
+    position: static;
+    top: 0px;
+}
+
+.mainStyle {            /*      flex columna inicial alinea en el centro todo el form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+.introCont {                /*  contenedor del titulo y descripcion de registro*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+
+.registroTitles {           /* estilo del titulo*/
+    font-size:30px;
+    margin-bottom: 0;
+    color: #2a505a;
+}
+
+.fillCont {             /*      ancho permanente del formulario*/
+    width: 486px;
+}
+
+.inputText {            /*  estilo de inputs de ingresar texto*/
+    padding:8px;
+    border: none;
+    border-radius: 6px;
+    background-color: 	#eed6d3;
+    box-shadow:  0px 0px 2px ;
+    box-shadow:  inset 1px 1px 4px 	#e6c2bf;
+}
+
+.formItem {     /*  contenedor de label y su respectivo input */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.radioItem {        /*  contenedor de cada radioOption*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    margin-bottom: 10px;
+}
+
+.buttonSection {        /* contenedor de boton de enviar, quiza agregue uno de eliminar*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.sendButton {   /*   cambia fuente y todo el estilo del boton ENVIAR.   */
+    width: 150px;
+    height: 30px;
+    font-family:Courier, monospace;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #2a505a;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+.fStyle {           /* footer permanece pegado a la pantalla FIXED*/
+    background-color: #928880;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0px;
+
+
+}
