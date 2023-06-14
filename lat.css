@@ -83,4 +83,10 @@ table {
 .linkf {
 text-decoration: none; /* Quitar el subrayado */
 color: #000; /* Establecer el color del texto a negro */
+font-weight: bold;
+}
+.cr {
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
 }
